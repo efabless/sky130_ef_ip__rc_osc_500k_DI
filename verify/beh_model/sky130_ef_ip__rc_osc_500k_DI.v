@@ -1,5 +1,7 @@
 /*
 	Copyright 2020 Efabless Corp.
+
+	Author: Mohamed Shalan (mshalan@efabless.com)
 	
 	Licensed under the Apache License, Version 2.0 (the "License"); 
 	you may not use this file except in compliance with the License. 
@@ -26,15 +28,12 @@ module sky130_ef_ip__rc_osc_500k_DI (
     output  wire    dout
 );
 
-sky130_ef_ip__rc_osc_500k mprj (
-`ifdef USE_POWER_PINS
-    .avdd(vdda1),
-    .avss(vssa1),
-    .dvdd(vccd1),
-    .dvss(vssd1),
-`endif
-    .ena(ena),
-    .dout(dout)
-);
+    reg clk=0;
+    
+    // period/2
+    real period500 = 1000;
+ 
+    always #period500 clk = (!clk & ena);
+    assign dout = clk;
 
 endmodule
