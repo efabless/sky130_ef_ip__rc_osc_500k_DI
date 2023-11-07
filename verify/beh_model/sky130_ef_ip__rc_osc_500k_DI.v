@@ -19,13 +19,13 @@
 
 module sky130_ef_ip__rc_osc_500k_DI (
 `ifdef USE_POWER_PINS
-    input    vdda1,
-    input    vssa1,
-    input    vccd1,
-    input    vssd1,
+    input   wire    vdda1,
+    input   wire    vssa1,
+    input   wire    vccd1,
+    input   wire    vssd1,
 `endif
-    input    ena,
-    output   dout
+    input   wire    ena,
+    output  wire    dout
 );
 
     reg clk=0;
