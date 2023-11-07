@@ -1,0 +1,31 @@
+{
+    "info": {
+        "name": "sky130_ef_ip__rc_osc_500k_DI",
+        "description": "Digital wrapper for A 500kHz oscillator using a current-starved ring oscillator",
+        "repo": "github.com/efabless/sky130_ef_ip__rc_osc_500k_DI",
+        "owner": "Efabless Corp.",
+        "license": "APACHE 2.0",
+        "author": "Marwan Abbas",
+        "email": "marwan.abbas@efabless.com",
+        "version": "v1.0.0",
+        "date": "1-11-2023",
+        "category": "analog",
+        "tags": [
+            "ring oscillator",
+            "low power"
+        ],
+        "bus": [
+            "n/a"
+        ],
+        "type": "hard",
+        "status": "verified",
+        "cell_count": "n/a",
+        "width": "92.06",
+        "height": "130.696",
+        "technology": "sky130",
+        "clock_freq_mhz": "0.5",
+        "supply_voltage": [
+            "1.8"
+        ]
+    }
+}
