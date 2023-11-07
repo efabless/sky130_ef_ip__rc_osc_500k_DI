@@ -1,0 +1,31 @@
+{
+	"STD_CELL_LIBRARY": "sky130_fd_sc_hvl",
+	"EXTRACT_TYPE": "analog",
+	"TOP_SOURCE": "sky130_ef_ip__rc_osc_500k_DI",
+	"TOP_LAYOUT": "$TOP_SOURCE",
+	"EXTRACT_FLATGLOB": [
+		"*sky130_fd_pr__*[A-Z]*"
+	],
+	"EXTRACT_ABSTRACT": [
+		"*__fill_*",
+		"*__fakediode_*",
+		"*__tapvpwrvgnd_*"
+	],
+	"LVS_FLATTEN": [
+		""
+	],
+	"LVS_NOFLATTEN": [
+		""
+	],
+	"LVS_IGNORE": [
+		""
+	],
+	"LVS_SPICE_FILES": [
+		"$PDK_ROOT/$PDK/libs.ref/$STD_CELL_LIBRARY/spice/*.spice",
+		"$UPRJ_ROOT/ip/sky130_ef_ip__rc_osc_500k/spice/layout/sky130_ef_ip__rc_osc_500k.spice"
+	],
+	"LVS_VERILOG_FILES": [
+		"$UPRJ_ROOT/hdl/rtl/$TOP_SOURCE.v"
+	],
+	"LAYOUT_FILE": "$UPRJ_ROOT/layout/gds/$TOP_LAYOUT.gds"
+}
