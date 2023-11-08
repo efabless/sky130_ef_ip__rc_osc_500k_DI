@@ -16,23 +16,23 @@
 `default_nettype    none
 
 module sky130_ef_ip__rc_osc_500k_DI (
-`ifdef USE_POWER_PINS
+// `ifdef USE_POWER_PINS
     input   wire    vdda1,
     input   wire    vssa1,
     input   wire    vccd1,
     input   wire    vssd1,
-`endif
+// `endif
     input   wire    ena,
     output  wire    dout
 );
 
 sky130_ef_ip__rc_osc_500k mprj (
-`ifdef USE_POWER_PINS
+// `ifdef USE_POWER_PINS
     .avdd(vdda1),
     .avss(vssa1),
     .dvdd(vccd1),
     .dvss(vssd1),
-`endif
+// `endif
     .ena(ena),
     .dout(dout)
 );
