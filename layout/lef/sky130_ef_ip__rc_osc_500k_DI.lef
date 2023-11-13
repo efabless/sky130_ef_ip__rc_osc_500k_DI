@@ -26,14 +26,14 @@ MACRO sky130_ef_ip__rc_osc_500k_DI
     ANTENNADIFFAREA 6.628900 ;
     PORT
       LAYER met4 ;
-        RECT 18.615 92.530 22.400 138.695 ;
+        RECT 18.615 92.530 21.715 138.695 ;
     END
   END vssd1
   PIN vccd1
     ANTENNADIFFAREA 4.280700 ;
     PORT
       LAYER met4 ;
-        RECT 32.265 92.530 36.050 138.695 ;
+        RECT 32.265 92.530 35.365 138.695 ;
     END
   END vccd1
   PIN vdda1
